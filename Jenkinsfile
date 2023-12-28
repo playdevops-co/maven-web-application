@@ -5,7 +5,7 @@ node{
 def mavenHome = tool name: 'maven3.9.6'
 
 stage('CheckOutCode'){
-git branch: 'development', credentialsId: '039d9e6d-9b4b-4ab5-87da-663e8850d508', url: 'https://github.com/playdevops-co/maven-web-application'
+git branch: 'development', credentialsId: '039d9e6d-9b4b-4ab5-87da-663e8850d508', url: 'https://github.com/playdevops-co/maven-web-application.git'
 }
 
 stage('Build'){
