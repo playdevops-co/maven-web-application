@@ -1,5 +1,3 @@
-Master node / Master instance
-
 node{
 
 def mavenHome = tool name: 'maven3.9.6'
