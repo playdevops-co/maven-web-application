@@ -2,6 +2,11 @@ node{
 
 def mavenHome = tool name: 'maven3.9.6'
 
+echo "The Node name is: ${env.NODE_NAME}"
+echo "The Job Name is: ${env.JOB_NAME}"
+echo "The Build Name is : ${env.BUILD_DISPLAY_NAME}"
+
+
 stage('CheckOutCode'){
 git branch: 'development', credentialsId: '039d9e6d-9b4b-4ab5-87da-663e8850d508', url: 'https://github.com/playdevops-co/maven-web-application.git'
 }
@@ -25,3 +30,12 @@ sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war  ec2-user@1
 }
 
 }
+
+// Single line comment
+
+/*  
+
+Multiple line comment
+*/
+
+// Using "def" we can decalre the variable in groovy script
