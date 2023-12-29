@@ -49,7 +49,7 @@ finally{
 sendSlackNotifications(currentBuild.result)
 }
 }//closing node
-
+//Test commit
 def sendSlackNotifications(String buildStatus = 'STARTED') {
   // build status of null means successful
   buildStatus =  buildStatus ?: 'SUCCESS'
