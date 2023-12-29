@@ -10,7 +10,7 @@ echo "Work space Name is: ${env.WORKSPACE}"
 echo "Jenkins Home is: ${env.JENKINS_HOME}"
 echo "Jenkins URL is: ${env.JENKINS_URL}"
 
-properties([[$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
+//properties([[$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
 
 try{
 // Get the code from github
