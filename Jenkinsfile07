@@ -1,6 +1,8 @@
 pipeline{
 
-agent any
+agent{
+  label "workers"
+}
 
 tools {
   maven 'maven3.9.6'
@@ -29,7 +31,7 @@ stages {
     sh "mvn clean package"
     }
   }
-
+/*
   stage('SonarQubeTest') {
     steps {
     sh "mvn clean sonar:sonar"
@@ -50,9 +52,9 @@ stages {
 
     }
   }
-
+*/
 }//stages
-
+/*
 post {
   
   success {
@@ -73,4 +75,5 @@ post {
    
   }
 }
+*/
 }//Pipeline
