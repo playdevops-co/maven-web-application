@@ -5,7 +5,7 @@
 	<groupId>com.gp</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>1.2.0</version>
+	<version>1.2.0-snapshot-releases</version>
 	
 	<name>maven-web-application</name>
 
